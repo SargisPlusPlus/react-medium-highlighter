@@ -1,7 +1,7 @@
 {
   "name": "react-medium-highlighter",
-  "version": "1.0.0",
-  "description": "Simple Medium like highlighter",
+  "version": "1.0.1",
+  "description": "Simple Medium-like highlighter",
   "author": "Sargis Dudaklyan",
   "license": "MIT",
   "keywords": [
@@ -10,11 +10,7 @@
   ],
   "main": "./dist/tsc/main.js",
   "types": "./dist/tsc/main.d.ts",
-  "bin": {
-    "my-cli-tool": "./dist/esbuild/cli.js"
-  },
   "scripts": {
-    "cli": "ts-node src/cli.ts",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "build": "tsc -p tsconfig.json"
   },
@@ -37,5 +33,10 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "homepage": "https://github.com/SargisPlusPlus/react-medium-highlighter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SargisPlusPlus/react-medium-highlighter.git"
   }
 }
