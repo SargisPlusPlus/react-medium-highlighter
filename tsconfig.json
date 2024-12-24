@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript
+    "target": "ESNext",
+
+    // Module system for compatibility with modern bundlers
+    "module": "ESNext",
+
+    // Generate declaration files for type checking in consuming projects
+    "declaration": true,
+    "declarationMap": true,
+
+    // Output directory for compiled files
+    "outDir": "dist",
+
+    // Root directory for source files
+    "rootDir": "src",
+
+    // Enable strict type checking
+    "strict": true,
+
+    // Ensure compatibility with CommonJS modules
+    "moduleResolution": "Node",
+
+    // Use React-specific JSX transformations
+    "jsx": "react-jsx",
+
+    // Avoid bundling dependencies (to be treated as peer dependencies)
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Emit only ES modules (for modern bundlers like Webpack, Vite, Rollup)
+    "allowSyntheticDefaultImports": true,
+
+    // Support tree-shaking by preserving ES module imports/exports
+    "isolatedModules": true
+  },
+  "include": ["src"], // Include all files in the "src" directory
+  "exclude": [
+    "node_modules",
+    "dist",
+    "example",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ] // Exclude tests, build, and example files
+}
