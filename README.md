@@ -1,4 +1,4 @@
-# React Highlighter
+# React Medium Highlighter
 
 ![React Highlighter Demo](./assets/highlighter-demo.gif)
 
@@ -19,16 +19,15 @@ A lightweight, Medium-like text highlighter for React. Highlight text, add comme
 
 Install the library using npm or yarn:
 
+```bash
 npm install react-highlighter
-
-or
-
-yarn add react-highlighter
+```
 
 ---
 
 ## Usage
 
+```typescript
 import React, { useState } from "react";
 import { Highlighter } from "react-highlighter";
 
@@ -48,6 +47,7 @@ return (
 };
 
 export default App;
+```
 
 ---
 
@@ -58,22 +58,6 @@ export default App;
 | createAnnotation | Function | Triggered when a highlight is created. |
 | removeAnnotation | Function | Triggered when a highlight is removed. |
 | annotations      | Array    | Pre-existing highlights.               |
-
----
-
-## Customization
-
-Change styles like highlight colors:
-
-.highlighter-circle-sketch-highlight {
-background-color: yellow;
-}
-
----
-
-## Demo
-
-Check the live demo: https://your-demo-link.com
 
 ---
 
